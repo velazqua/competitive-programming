@@ -1,0 +1,11 @@
+#!/bin/bash
+if [ -e "PE$1" ]
+then
+  echo "Error: "PE$1" already exists"
+else
+  mkdir "PE$1"
+  cd "PE$1"
+  echo "[Problem \#$1](http://www.projecteuler.net/problem=$1)
+===" > "README.md"
+  touch "PE$1.cpp" 
+fi

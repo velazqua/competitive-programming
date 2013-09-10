@@ -1,0 +1,23 @@
+#!/bin/bash
+# Used to clean up this directory
+for file in $(ls)
+do
+  if [[ $file =~ 'cpp'$ ]]; then
+    name=${file%.*}
+    names=$(echo $name | sed 's/^PE//')
+    cd "PE$names"
+    mv "../$file" "$file"
+    cd ".."
+  fi
+done
+
+#if [ -e "PE$1" ]
+#then
+#  echo "Error: "PE$1" already exists"
+#else
+#  mkdir "PE$1"
+#  cd "PE$1"
+#  echo "[Problem \#$1](http://www.projecteuler.net/problem=$1)
+#===" > "README.md"
+#  touch "PE$1.cpp" 
+#fi

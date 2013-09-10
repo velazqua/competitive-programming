@@ -1,0 +1,42 @@
+	|\
+	| \
+ c 	|  \  a
+	|   \
+	|    \
+	-------
+	   b
+	  
+a = b
+c = a+1 || c = a-1
+
+c must be even!
+	=> a and b must be odd
+
+a^2 = h^2 + (c/2)^2
+
+h^2 = a^2 - (c/2)^2
+h   = sqrt( a^2 - (c/2)^2 )
+
+A = bh/2
+  = c*h/2
+
+A is integral => b*h is even
+			  => one of b or h is even
+
+ex. a = b = 5, c = 6
+h   = sqrt( 5^2 - (6/2)^2 )
+	= sqrt( 5^2 - 3^2 )
+	= sqrt( 25 - 9 )
+	= sqrt( 16 )
+	= 4
+
+ex. a = b = 17, c = 16
+	= sqrt( 17^2 - 8^2 )
+	= sqrt( 289 - 64 )
+	= sqrt( 225 ) = sqrt( 15^2 )
+	= 15
+	
+generally:
+	= sqrt( a^2 - ((a-1)/2)^2 )
+	= sqrt( (4*a^2)/4 - (a^2-2*a-1)/4 )
+	= sqrt( (3*a^2-2*a-1)/4 ) 	
