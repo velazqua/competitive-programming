@@ -7,4 +7,4 @@ fi
 rm -rf $1/a.out $1/$1 $1/*.out2* 
 git add $1
 git commit -m "$2"
-git push git@github.com:velazqua/competitive-programming.git
+git push origin master
