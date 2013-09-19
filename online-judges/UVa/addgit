@@ -10,4 +10,4 @@ sed "s/ \* End  :/ \* End  : `date`/g" "$1/$1.cpp" > "$TEMPFILE" && mv $TEMPFILE
 rm -f $TEMPFILE
 git add $1
 git commit -m "$2"
-git push git@github.com:velazqua/UVa.git --force
+git push origin master
