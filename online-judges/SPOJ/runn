@@ -1,0 +1,6 @@
+#!/bin/bash
+f=${PWD##*/}
+g++ "$f.cpp"
+./a.out < "$f.in" > "$f.out2"
+cat "$f.out2"
+

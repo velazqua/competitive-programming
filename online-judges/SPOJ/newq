@@ -1,0 +1,16 @@
+#!/bin/bash
+if [ -e $1 ]
+then
+  echo "Error: $1 already exists"
+else
+  mkdir "$1"
+  cd "$1"
+  echo "[Question: $1 \"$2\"](http://www.spoj.pl/problems/$1)
+===" > "README.md"
+  touch "$1.cpp" "$1.in" "$1.out"
+  echo "/* Alex Velazquez" >> "$1.cpp"
+  echo " * Start: `date`" >> "$1.cpp"
+  echo " * End  :" >> "$1.cpp" 
+  echo "*/" >> "$1.cpp"
+  cat "../template.cpp" >> "$1.cpp"  
+fi

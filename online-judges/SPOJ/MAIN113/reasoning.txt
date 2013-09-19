@@ -1,0 +1,12 @@
+_ _ _ _ 
+3*3*3*3 = 3^4 = 81
+Non-special strings = total - special strings
+Special strings: 6 of them
+XYZ, XZY, YXZ, YZX, ZXY, ZYX
+A string of length 3 fits N-3+1 times in a string of length N
+Since there are 6 of these strings, then:
+3*(N-3)*(N-3+1)*6 special strings with all strings of length N
+N=2 => (2-3+1)*6 => 0*6 => 0
+N=4 => 3*(4-3+1)*6 => 2*6*3 => 30
+N=5 => 
+X Y Z _ _

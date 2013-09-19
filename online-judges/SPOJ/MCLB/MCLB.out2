@@ -1,0 +1,10 @@
+Case 1: The goal state could be reached after 2 laser beams.
+Case 2: The goal state will never be reached!
+Case 3: The goal state will never be reached!
+Case 4: The goal state will never be reached!
+Case 5: The goal state could be reached after 1 laser beams.
+Case 6: The goal state could be reached after 10 laser beams.
+Case 7: The goal state could be reached after 18446744073709551614 laser beams.
+Case 8: The goal state could be reached after 0 laser beams.
+Case 9: The goal state could be reached after 3 laser beams.
+Case 10: The goal state will never be reached!
