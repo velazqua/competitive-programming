@@ -1,0 +1,10 @@
+Case #1: 200 500 600 900
+This is an A-sequence.
+Case #2: 1 2 3
+This is not an A-sequence.
+Case #3: 10 14 18 20 50
+This is an A-sequence.
+Case #4: 46 25 73 71 30 78
+This is not an A-sequence.
+Case #5: 15 25
+This is an A-sequence.

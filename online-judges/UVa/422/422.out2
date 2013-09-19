@@ -1,0 +1,7 @@
+words[i]: DISC
+1,2 4,2
+words[i]: DISK
+5,1 5,4
+i: 1
+Not foundDISK
+words[i]: DISP

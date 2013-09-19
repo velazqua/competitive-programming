@@ -1,0 +1,3 @@
+#!/bin/bash
+f=${PWD##*/}
+diff "$f.out" "$f.out2"

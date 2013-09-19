@@ -1,0 +1,17 @@
+Case 1:
+Closest sum to 1 is 6
+Closest sum to 51 is 37
+Closest sum to 30 is 29
+Case 2:
+Closest sum to 1 is 2
+Closest sum to 2 is 2
+Closest sum to 3 is 3
+Case 3:
+Closest sum to 4 is 4
+Closest sum to 5 is 4
+Closest sum to 6 is 4
+Case 4:
+Closest sum to 87 is 82
+Closest sum to 92 is 82
+Closest sum to 43 is 40
+Closest sum to 120 is 97
