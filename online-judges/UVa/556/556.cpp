@@ -44,11 +44,6 @@ int main ()
   int b, w;
   int dx[] = {0, -1, 0, 1};
   int dy[] = {1, 0, -1, 0};
-  map<pair<int, int>, int> M;
-  M[make_pair(0,1)] = 3;
-  M[make_pair(0,-1)] = 1;
-  M[make_pair(1,0)] = 2;
-  M[make_pair(-1,0)] = 0;
   while (cin >> b >> w) {
     if (!b && !w)
       break;
