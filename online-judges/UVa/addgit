@@ -9,5 +9,5 @@ rm -rf $1/a.out $1/$1 $1/$1.out2
 sed "s/ \* End  :/ \* End  : `date`/g" "$1/$1.cpp" > "$TEMPFILE" && mv $TEMPFILE "$1/$1.cpp"
 rm -f $TEMPFILE
 git add $1
-git commit -m "$2"
+git commit -m "UVa problem: $2"
 git push origin master

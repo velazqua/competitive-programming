@@ -1,33 +1,30 @@
 from math import *
-def NthFib( k ):
-	return floor((((1+sqrt(5))/2)**k)/sqrt(5)+0.5) 
+r5 = sqrt(5)
+p1 = (1 + r5)/2.0
+p2 = (1 - r5)/2.0
 
-def nineDig( n ):
-	if( n/100000000000 == 0 ):
-		return n
-	else:
-		return nineDig( n/10 )	
+def firstTenDigits (f):
+  digits = int(log10(f))
+  k = digits - 9
+  return int(f/(10**k))
 
-def power9Dig( base, exponent ):
-	t = 1
-	for i in xrange(0,exponent):
-		t *= base
-		t = nineDig(t)
-	return t
+def NthFib (n):
+  return firstTenDigits((p1**n)/r5)
 
-def NthFibM( k ):
-	return floor((power9Dig(((1+sqrt(5))/2),k))/sqrt(5)+0.5)  
-		
+def isPandigital (f):
+  dp = [False] * 10
+  for i in xrange(9):
+    dig = f % 10
+    f /= 10
+    dp[dig] = True
+  for i in xrange(1, 10):
+    if dp[i] == False:
+      return False
+  return True
+
 fibs =[0,1,1]
-mfibs=[0,1,1]
-limit = 1000
+limit = 100000
 for i in xrange(3,limit):
-	fibs.append(fibs[i-1]+fibs[i-2])
-	mfibs.append((mfibs[i-1]%1000000000+mfibs[i-2]%1000000000)%1000000000)
-
-#this works
-#for i in xrange(0,len(fibs)):
-#	if fibs[i]%1000000000 != mfibs[i]:
-#		print i
-
-print power9Dig(((1+sqrt(5))/2),5)
+  fibs.append((fibs[i-1]+fibs[i-2])%10000000000)
+  if isPandigital(fibs[i]):
+    print i, fibs[i]
