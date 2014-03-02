@@ -35,9 +35,9 @@ int main ()
   }
 
   decr[1][0] = 1;
+  
   // Remove increasing & decreasing numbers
   lld duplicates = NUM_DIGITS * 9 + 1;
-  cout << "num duplicates: " << duplicates << endl;
 
   lld total = 0;
   for(int d = 1; d <= NUM_DIGITS; d++) {
